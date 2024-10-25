@@ -1,0 +1,81 @@
+/* Estilos básicos para mejorar la presentación */
+body {
+    background-color: #000000;   /* Fondo negro */
+    color: #f9f9f9;             /* Color del texto blanco */
+    font-family: Arial, sans-serif;
+}
+
+.encabezado {
+    padding: 20px;
+}
+
+.formulario-encabezado {
+    max-width: 90%;
+    margin: auto;
+    padding: 50px;
+    background-color: #1c1c1c;   /* Fondo gris oscuro */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.input-encabezado {
+    margin-bottom: 15px;
+}
+
+.input-encabezado input, .input-encabezado select, .input-encabezado textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: #f9f9f9;             /* Color del texto blanco */
+}
+
+.boton-encabezado input {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;   /* Botón azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-encabezado input:hover {
+    background-color: #0056b3;   /* Botón azul oscuro al pasar el ratón */
+}
+
+/* Navegación */
+.navegacion {
+    margin: 2%;
+    padding: 1%;
+    background-color: #333;      /* Fondo gris oscuro para la barra de navegación */
+    border: 1px solid #444;
+    text-align: right;
+    font-size: 18px;
+}
+
+.navegacion a {
+    color: #f9f9f9;              /* Texto blanco */
+    text-decoration: none;        /* Elimina el subrayado */
+    margin: 2%;
+    padding: 10px 20px;
+    background-color: #444;      /* Fondo más oscuro para los enlaces */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navegacion a:hover {
+    background-color: #007bff;    /* Cambia a azul al pasar el ratón */
+    color: #ffffff;
+}
+
+/* Logo */
+.nombre {
+    color: #f9f9f9;              /* Color blanco para el logo */
+    background-color: #1c1c1c;    /* Fondo gris oscuro */
+    border: 3px solid #444;
+    font-size: 30px;
+    padding: 10px;
+    display: inline-block;
+}

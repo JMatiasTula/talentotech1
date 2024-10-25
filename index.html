@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+
+<header class="encabezado">
+    <div class="contenido-navegacion">
+        <div class="logo">
+            <h2 class="nombre">GM<span>/ACDelco</span></h2>
+        </div>
+
+        <!-- Primer menú de navegación -->
+        <nav class="navegacion">
+            <a href="inicio.html"><b>Inicio</b></a>
+            <a href="turismo.html"><b>Ofertas</b></a>
+            <a href="historis.html"><b>Quienes Somos</b></a>
+            <a href="galeria.html"><b>Galería</b></a>
+            <a href="contacto.html"><b>Contacto</b></a>
+        </nav>
+    </div>
+
+    <div class="barra">
+        <span></span><span></span><span></span>
+    </div>
+
+    <!-- Segundo menú de navegación -->
+    <nav class="navegacion">
+        <a href="Correas.html"><b>Correas</b></a>
+        <a href="Tensores.html"><b>Tensores</b></a>
+        <a href="Galeria.html"><b>Filtros</b></a>
+        <a href="Amortiguadores.html"><b>Amortiguadores</b></a>
+        <a href="Chapa.html"><b>Chapa</b></a>
+        <a href="Vidrios.html"><b>Vidrios</b></a>
+    </nav>
+
+    <div class="contenido-encabezado contenedor">
+        <div class="texto-encabezado">
+            <h3 class="textoFormulario">Puedes comunicarte con nosotros a través de nuestras redes sociales o solicitar información mediante nuestro formulario de contacto.</h3>
+        </div>
+
+        <!-- Formulario de contacto -->
+        <form id="my_form" class="formulario-encabezado"
+        action="https://formspree.io/f/mnnqnwwd"
+        method="POST">
+            
+
+            <h3 class="tituloFormulario">Formulario de contacto</h3>
+
+            <div class="input-encabezado">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            </div>
+
+            <div class="input-encabezado">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+            </div>
+
+            <div class="input-encabezado">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" pattern="[0-9]{10}" title="Debe contener 10 dígitos numéricos" required>
+            </div>
+
+            <div class="input-encabezado">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="Correo" required>
+            </div>
+
+            <div class="input-encabezado">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+            </div>
+
+            <div class="input-encabezado">
+                <label for="consulta">Motivo de consulta</label>
+                <select id="consulta" name="consulta" required>
+                    <option value="consulta-general">Consulta general</option>
+                    <option value="ventas">Ventas</option>
+                    <option value="garantias">Garantías</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+
+            <div class="boton-encabezado">
+                <input class="btn azul" type="submit" value="Enviar Mensaje">
+            </div>
+            
+        </form>
+    </div>
+</header>
+
+<script>
+    document.getElementById("my_form").reset();
+    console.log(Math.random());
+</script>
+
+
+</body>
+</html>
